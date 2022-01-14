@@ -1,0 +1,182 @@
+/*=============== RESET ===============*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.final a {
+    text-decoration: none;
+    color: #8257E5; /*cor aplicada ao link "final"*/
+}
+
+
+/*=============== IMAGES/BACKGROUND ===============*/
+body {
+    width: 100%;
+    overflow: hidden;
+}
+
+.section {
+    display: flex;
+}
+
+.read-news {
+    position: absolute;
+    width: 73.4375rem;
+    height: 49rem;
+    left: 19rem; /*FIGMA = 23.5rem*/
+    top: 0;    
+}
+
+.section .background {
+    position: absolute;
+    width: 45rem;
+    height: 49rem; /*O VALOR REAL É DE 48.75REM, VISTO QUE NO FIGMA É 780px*/
+    left: 0;
+    top: 0;
+    background: #121214;   
+}
+
+/*=============== LOGO ===============*/
+.logo {
+    position: absolute;
+    width: 24.3125rem; /*389px*/
+    height: 5.875rem; /*94px*/
+    left: 1rem; /*30px*/
+    top: 2rem; /*FIGMA = 50px*/
+}
+
+/*=============== TEXTS ===============*/
+.section .text {
+    position: absolute;
+    width: 40.43rem; /*NO ORIGINAL É 647px, OU SEJA, 40.4375rem*/
+    height: 6.375rem;
+    left: 2.25rem;
+    top: 14.75rem;
+}
+
+.text h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: #08C05E;
+}
+
+.text h3 {
+    position: relative;
+    top: 0.535rem;
+    font-family: 'Spartan', sans-serif;
+    font-style: normal;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    color: #FFFFFF;
+}
+
+.text p {
+    position: relative;
+    top: 2.0975rem;
+    font-family: 'Spartan', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+    color: #FFFFFF;
+}
+
+.form h4 {
+    font-family: 'Spartan', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+    color: #A8A8A8;
+}
+
+/*=============== FORM ===============*/
+.form {
+    position: absolute;
+    width: 49.875rem;
+    height: 5.25rem;
+    left: 2.25rem;
+    top: 24.25rem; 
+}
+
+.form input {
+    position: absolute;
+    width: 49.875rem;
+    height: 3rem;
+    left: 0; /*TÁ DIFERENTE DO FIGMA*/
+    top: 2.25rem; /*ESSE TÁ DIFERENTE DO FIGMA*/
+    filter: drop-shadow(4px 10px 15px rgba(0, 0, 0, 0.5));;
+    display: inline-block; /*tanto essa linha quando a de baixo servem para mover o CONTEUDO a ser digitado no input*/
+    padding-left: 10px;
+}
+
+.form .greenbox {
+    content: '';
+    position: absolute;
+    width: 0.3125rem; /*5px*/
+    height: 3rem; /*48px*/
+    left: 0; /*FIGMA = 36px = 2.25rem*/
+    top: 2.25rem;
+    background: #04D361;
+}
+
+::-webkit-input-placeholder {
+    position: absolute;
+    width: 7.0625rem; /*113px*/
+    height: 0.875rem; /*14px*/
+    left: 0.625rem; /*51px*/
+    top: 1.0625rem;  /*441px*/
+
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.75rem; /*12px*/
+    line-height: 0.875rem; /*14px*/
+    color: #6A6A6A;
+} /*ESSE WEBKIT SERVE PARA FAZER ALTERAÇÕES NO PLACEHOLDER*/
+
+/*=============== BUTTON ===============*/
+.form button {
+    display: flex;
+    position: absolute;
+    background: #8257E5;
+    width: 3rem;
+    height: 3rem;
+    left: 46.875rem; /*FIGMA= 786px = 49.125rem*/
+    top: 2.25rem;  /*FIGMA= 424px = 26.5rem*/
+    cursor: pointer; /*muda o cursor para a mãozinha*/
+    border: none;
+}
+
+.form button .send {
+    position: relative;
+    filter: invert(98%) sepia(96%) saturate(11%) hue-rotate(269deg) brightness(103%) contrast(100%); /*PARA MUDAR A COR DO SVG*/
+    top: 0.75rem;
+    left: 0.75rem; /*TOP E LEFT PARA SE ALINHAR AO CENTRO DO BOTÃO*/
+}
+
+/*=============== FINAL === TEXT + ARROW RIGHT ===============*/
+
+.final {
+    position: absolute;
+    width: 12.25rem; /*196px*/
+    height: 1.5rem; /*24px*/
+    left: 0; /*36px*/
+    top: 11rem; /*522px === 32.625rem*/
+    color: #8257E5;
+
+    font-family: 'Spartan', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.875rem; /*14px*/
+    line-height: 1.1875rem; /*19px*/  
+} 
+
+.final .arrow-right {
+    position: relative;
+    top: 0.5rem;
+    filter: invert(35%) sepia(86%) saturate(3132%) hue-rotate(242deg) brightness(97%) contrast(85%); /*Esse FILTER serve para alterar a cor do SVG. As especificações foram conseguidas no conversor que existe no site da codepen: https://codepen.io/sosuke/pen/Pjoqqp */
+}
